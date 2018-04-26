@@ -1,0 +1,16 @@
+﻿<Window x:Class="Спартак_Диплом.ProductsNodeDeleteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Спартак_Диплом"
+        mc:Ignorable="d"
+        Title="ProductsNodeDeleteWindow" Height="140" Width="360" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock x:Name="textBlock" Margin="10,10,0,0" TextWrapping="Wrap" Text="При удалении узла будут удалены все дочерние узлы, а также информация о всех продуктах относящихся к ним. Чтобы продолжить введите слово &quot;УДАЛИТЬ&quot; и нажмите кнопку Подтвердить." Height="64" VerticalAlignment="Top" HorizontalAlignment="Left" Width="334" FontSize="10"/>
+        <TextBox x:Name="TBxConfirm" Margin="10,0,0,10" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="165" Height="23" VerticalAlignment="Bottom"/>
+        <Button x:Name="ButCancel" Content="Отмена" Margin="0,0,92,10" Click="ButCancel_Click" HorizontalAlignment="Right" Width="75" Height="23" VerticalAlignment="Bottom"/>
+        <Button x:Name="ButConfirm" Content="Подтвердить" Margin="0,0,10,10" HorizontalAlignment="Right" Width="77" Height="23" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>

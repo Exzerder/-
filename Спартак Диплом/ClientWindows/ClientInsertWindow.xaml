@@ -1,0 +1,33 @@
+﻿<Window x:Class="Спартак_Диплом.ClientAddingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Спартак_Диплом"
+        mc:Ignorable="d"
+        Title="ClientAddingWindow" Height="357.664" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <TextBox x:Name="TBxName" HorizontalAlignment="Left" Height="23" Margin="142,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <TextBox x:Name="TBxMail" HorizontalAlignment="Left" Height="23" Margin="142,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <TextBox x:Name="TBxAdress" HorizontalAlignment="Left" Height="23" Margin="142,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <TextBox x:Name="TBxPhone" HorizontalAlignment="Left" Height="23" Margin="142,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <CheckBox x:Name="ChkBoxIndividual" Content="Физическое лицо" HorizontalAlignment="Left" Margin="142,122,0,0" VerticalAlignment="Top" Width="140" Click="ChkBoxIndividual_Click"/>
+        <Label x:Name="LabName" Content="Имя" HorizontalAlignment="Left" Margin="10,17,0,0" VerticalAlignment="Top" Padding="5,0"/>
+        <Label x:Name="LabMail" Content="E-mail" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Padding="5,0"/>
+        <Label x:Name="LabAdress" Content="Адрес" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top" Padding="5,0"/>
+        <Label x:Name="LabPhone" Content="Телефон" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top" Padding="5,0"/>
+        <Grid x:Name="GridIndividual" Height="150" Margin="10,142,10,0" VerticalAlignment="Top">
+            <TextBox x:Name="TBxPasSer" Height="23" Margin="0,21,174,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <Label x:Name="LabPasSer" Content="Серия паспорта" VerticalAlignment="Top" Padding="5,0" Margin="0,0,174,0"/>
+            <TextBox x:Name="TBxPasNum" Height="23" Margin="103,21,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <Label x:Name="LabPasNum" Content="Номер паспорта" Margin="103,3,68,0" VerticalAlignment="Top" Padding="5,0"/>
+            <Label x:Name="LabPasDate" Content="Дата выдачи" VerticalAlignment="Top" Padding="5,0" Margin="0,49,192,0"/>
+            <DatePicker x:Name="DTPickPasDate" Margin="0,70,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="LabPasSer_Copy1" Content="Орган, выдавший паспорт" VerticalAlignment="Top" Padding="5,0" Margin="0,99,117,0"/>
+            <TextBox x:Name="TBxPasNum_Copy1" Height="23" Margin="0,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        </Grid>
+        <Button x:Name="ButAdd" Content="Добавить" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" Click="ButAdd_Click"/>
+        <Button x:Name="ButCancel" Content="Отменить" HorizontalAlignment="Right" Margin="0,0,90,10" VerticalAlignment="Bottom" Width="75" Click="ButCancel_Click"/>
+
+    </Grid>
+</Window>

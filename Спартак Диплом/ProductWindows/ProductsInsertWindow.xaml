@@ -1,0 +1,26 @@
+﻿<Window x:Class="Спартак_Диплом.ProductsInsertWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Спартак_Диплом"
+        mc:Ignorable="d"
+        Title="ProductsInsertWindow" Height="300" Width="480">
+    <Grid Margin="2,2,2,2">
+        <Label x:Name="LabProductCode" Content="Код продукта" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBxProductCode" HorizontalAlignment="Left" Height="23" Margin="262,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="LabShortName" Content="Краткое наименование" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBxShortName" HorizontalAlignment="Left" Height="23" Margin="262,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="LabFullName" Content="Полное наименование" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBxFullName" HorizontalAlignment="Left" Height="23" Margin="262,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="LabOKPCode" Content="ОКП код" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBxOKPCode" HorizontalAlignment="Left" Height="23" Margin="262,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="LabVedCode" Content="ВЭД код" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBxVedCode" HorizontalAlignment="Left" Height="23" Margin="262,122,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Label x:Name="LabCost" Content="Учетная цена" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBxCost" HorizontalAlignment="Left" Height="23" Margin="262,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="ButAdd" Content="Добавить" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="75" Click="ButAdd_Click"/>
+        <Button x:Name="ButCancel" Content="Отмена" Margin="0,0,90,10" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
+
+    </Grid>
+</Window>
